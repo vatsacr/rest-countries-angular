@@ -8,10 +8,22 @@ import { CountryService } from "../country.service";
 })
 export class HomeComponent implements OnInit {
   countries: any = [];
+  searchTerm: string = "";
   constructor(private countryService: CountryService) {}
 
   ngOnInit() {
     this.getCountries();
+  }
+
+  searchCountry() {
+    const tempCountries = this.countries.filter(
+      (data) =>
+        !this.searchTerm ||
+        data.name.toLowerCase().includes(this.searchTerm.toLowerCase())
+    );
+    this.searchTerm.length > 2
+      ? (this.countries = tempCountries)
+      : this.getCountries();
   }
 
   getCountries() {

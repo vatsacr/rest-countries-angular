@@ -6,3 +6,37 @@ $fa-font-path: "~font-awesome/fonts";
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  font-weight: 700;
+}
+
+.input-group-text {
+  border-radius: 12px;
+}
+
+.form-control {
+  border-radius: 12px;
+}
+
+.form-control:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.w-40 {
+  width: 40% !important;
+}

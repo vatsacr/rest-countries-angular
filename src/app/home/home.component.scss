@@ -1,4 +1,12 @@
 .home {
-  .countries {
+  input {
+    border-left: none;
+  }
+  .input-group-text {
+    border-right: none;
+    background: #ffffff;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding: 1em;
   }
 }
