@@ -37,6 +37,19 @@ button:focus {
   border-color: #ced4da;
 }
 
+.right {
+  float: right;
+  margin-top: 0.175rem;
+}
+
 .w-40 {
   width: 40% !important;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+li.selected {
+  font-weight: 700;
 }

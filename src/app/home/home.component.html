@@ -15,7 +15,29 @@
           />
         </div>
       </div>
-      <div class=""></div>
+      <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ml-auto">
+        <div class="dropdown position-relative" (click)="toggleDropdown()">
+          <span>Filter by region</span>
+          <span
+            class="fa right"
+            [ngClass]="isOpen ? 'fa-chevron-up' : 'fa-chevron-down'"
+          ></span>
+          <ul
+            class="dropdown-list position-absolute w-100 start-0"
+            *ngIf="isOpen"
+          >
+            <li
+              *ngFor="let region of regions"
+              (click)="getSelectedRegion(region)"
+              [ngClass]="
+                selectedRegion.value === region.value ? 'selected' : ''
+              "
+            >
+              {{ region.name }}
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div

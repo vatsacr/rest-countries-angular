@@ -9,4 +9,21 @@
     border-top-right-radius: 0;
     padding: 1em;
   }
+  .dropdown {
+    border: 1px solid #ced4da;
+    border-radius: 12px;
+    height: 3.1rem;
+    padding: 0.7em;
+    cursor: pointer;
+    &-list {
+      list-style-type: none;
+      border: 1px solid #ced4da;
+      border-radius: 12px;
+      background-color: #ffffff;
+      top: 3.2em;
+      li {
+        padding: 0.5em 0;
+      }
+    }
+  }
 }

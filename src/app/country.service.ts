@@ -12,10 +12,10 @@ export class CountryService {
   }
 
   getCountry(code) {
-    return this.http.get("https://restcountries.eu/v2/alpha/" + code);
+    return this.http.get("https://restcountries.eu/rest/v2/alpha/" + code);
   }
 
   getCountriesByRegion(region) {
-    return this.http.get("https://restcountries.eu/v2/region/" + region);
+    return this.http.get("https://restcountries.eu/rest/v2/region/" + region);
   }
 }
