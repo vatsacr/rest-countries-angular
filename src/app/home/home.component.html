@@ -1,6 +1,13 @@
 <div class="home">
   <app-header></app-header>
-  <div class="countries" *ngFor="let country of countries">
-    <app-country [country]="country"></app-country>
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-3 col-xl-3 col-md-3 col-sm-6 col-12 p-4"
+        *ngFor="let country of countries"
+      >
+        <app-country [country]="country"></app-country>
+      </div>
+    </div>
   </div>
 </div>
