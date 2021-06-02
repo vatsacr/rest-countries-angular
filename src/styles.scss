@@ -5,6 +5,7 @@ $fa-font-path: "~font-awesome/fonts";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 h6,
@@ -37,6 +38,10 @@ button:focus {
   border-color: #ced4da;
 }
 
+.form-control {
+  background: inherit;
+}
+
 .right {
   float: right;
   margin-top: 0.175rem;
@@ -52,4 +57,48 @@ button:focus {
 
 li.selected {
   font-weight: 700;
+}
+
+.dark {
+  p,
+  li,
+  span,
+  button,
+  input,
+  input:focus,
+  .fa,
+  h6,
+  .h6,
+  h5,
+  .h5,
+  h4,
+  .h4,
+  h3,
+  .h3,
+  h2,
+  .h2,
+  h1,
+  .h1 {
+    color: #efefef;
+  }
+
+  header {
+    background-color: #2d333b;
+  }
+
+  .home {
+    background: #22272e;
+  }
+
+  .country-card {
+    background: #2d333b;
+  }
+
+  input,
+  input:focus,
+  .input-group-text,
+  .dropdown,
+  .dropdown-list {
+    background-color: #2d333b;
+  }
 }

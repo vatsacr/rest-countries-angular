@@ -1,4 +1,4 @@
-import { Component, OnInit, ReflectiveInjector } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { CountryService } from "../country.service";
 import { Region } from "../models/Region";
 

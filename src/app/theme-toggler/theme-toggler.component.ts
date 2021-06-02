@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ThemeService } from "../theme.service";
 
 @Component({
   selector: "app-theme-toggler",
@@ -6,12 +7,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./theme-toggler.component.scss"],
 })
 export class ThemeTogglerComponent implements OnInit {
-  theme: string = "Light";
-  constructor() {}
+  theme: string = localStorage.getItem("theme") || "light";
+  constructor(private themeService: ThemeService) {}
 
   ngOnInit() {}
 
   toggleTheme() {
-    this.theme = this.theme === "Light" ? "Dark" : "Light";
+    this.theme = this.theme === "light" ? "dark" : "light";
+    this.themeService.setTheme(this.theme);
   }
 }
