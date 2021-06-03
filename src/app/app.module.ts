@@ -9,6 +9,7 @@ import { HeaderComponent } from "./header/header.component";
 import { ThemeTogglerComponent } from "./theme-toggler/theme-toggler.component";
 import { CountryComponent } from "./country/country.component";
 import { HomeComponent } from "./home/home.component";
+import { CountryInformationComponent } from './country-information/country-information.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomeComponent } from "./home/home.component";
     ThemeTogglerComponent,
     CountryComponent,
     HomeComponent,
+    CountryInformationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

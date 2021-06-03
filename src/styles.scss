@@ -8,6 +8,17 @@ body {
   font-size: 14px;
 }
 
+img {
+  width: 100%;
+}
+
+button {
+  border: none;
+  padding: 1em;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+}
+
 h6,
 .h6,
 h5,
@@ -86,11 +97,13 @@ li.selected {
     background-color: #2d333b;
   }
 
-  .home {
+  .home,
+  .country-information {
     background: #22272e;
   }
 
-  .country-card {
+  .country-card,
+  button {
     background: #2d333b;
   }
 
@@ -100,5 +113,17 @@ li.selected {
   .dropdown,
   .dropdown-list {
     background-color: #2d333b;
+  }
+}
+
+.light {
+  .dropdown-list {
+    background: #ffffff;
+  }
+  .input-group-text {
+    background: #ffffff;
+  }
+  button {
+    background: inherit;
   }
 }
