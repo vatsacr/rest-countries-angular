@@ -103,7 +103,8 @@ li.selected {
   }
 
   .country-card,
-  button {
+  button,
+  .bordering-country {
     background: #2d333b;
   }
 
@@ -125,5 +126,9 @@ li.selected {
   }
   button {
     background: inherit;
+  }
+
+  .bordering-country {
+    border: 1px solid #ced4da;
   }
 }

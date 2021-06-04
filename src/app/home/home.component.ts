@@ -12,8 +12,9 @@ export class HomeComponent implements OnInit {
   searchTerm: string = "";
   isOpen: boolean = false;
   regions: Array<Region> = [
+    { name: "All", value: "all" },
     { name: "Africa", value: "africa" },
-    { name: "America", value: "america" },
+    { name: "Americas", value: "americas" },
     { name: "Asia", value: "asia" },
     { name: "Europe", value: "europe" },
     { name: "Oceania", value: "oceania" },
@@ -44,11 +45,15 @@ export class HomeComponent implements OnInit {
 
   getSelectedRegion(region) {
     this.selectedRegion = region;
-    this.countryService
-      .getCountriesByRegion(region.value)
-      .subscribe((countries) => {
-        this.countries = countries;
-      });
+    if (region.value === "all") {
+      this.getCountries();
+    } else {
+      this.countryService
+        .getCountriesByRegion(region.value)
+        .subscribe((countries) => {
+          this.countries = countries;
+        });
+    }
   }
 
   toggleDropdown() {

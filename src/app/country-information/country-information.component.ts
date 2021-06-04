@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnDestroy, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { CountryService } from "../country.service";
 
@@ -7,8 +7,9 @@ import { CountryService } from "../country.service";
   templateUrl: "./country-information.component.html",
   styleUrls: ["./country-information.component.scss"],
 })
-export class CountryInformationComponent implements OnInit {
+export class CountryInformationComponent implements OnInit, OnDestroy {
   country: any;
+  component: any;
   constructor(
     private countryService: CountryService,
     private activatedRoute: ActivatedRoute
@@ -20,8 +21,14 @@ export class CountryInformationComponent implements OnInit {
 
   getCountryInfo() {
     const routeParams = this.activatedRoute.snapshot.params;
-    this.countryService.getCountry(routeParams.id).subscribe((res) => {
-      this.country = res;
-    });
+    this.component = this.countryService
+      .getCountry(routeParams.id)
+      .subscribe((res) => {
+        this.country = res;
+      });
+  }
+
+  ngOnDestroy() {
+    this.component.unsubscribe();
   }
 }

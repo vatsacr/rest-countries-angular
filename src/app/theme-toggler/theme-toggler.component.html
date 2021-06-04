@@ -1,7 +1,9 @@
-<button (click)="toggleTheme()" class="">
-  <span
-    class="fa"
-    [ngClass]="theme === 'light' ? 'fa-toggle-off' : 'fa-toggle-on'"
-  ></span>
-  Dark Mode
-</button>
+<div class="theme-toggler">
+  <button (click)="toggleTheme()" class="">
+    <span
+      class="fa"
+      [ngClass]="theme === 'light' ? 'fa-moon-o' : 'fa-sun-o'"
+    ></span>
+    {{ theme === "light" ? "Dark" : "Light" }} Mode
+  </button>
+</div>
