@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+.country-card {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  height: 23rem;
+  max-height: 23rem;
+  cursor: pointer;
+  img {
+    height: 10rem;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+}

@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { CountryService } from "../country.service";
-import { Region } from "../models/Region";
+import { CountryService } from "../../services/country.service";
+import { Region } from "./models/Region";
 
 @Component({
   selector: "app-home",

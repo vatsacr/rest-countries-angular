@@ -1,0 +1,21 @@
+.right {
+  float: right;
+  margin-top: 0.175rem;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.button-border {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}

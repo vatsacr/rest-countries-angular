@@ -4,25 +4,28 @@
       <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
         <div class="input-group mb-2">
           <div class="input-group-prepend">
-            <div class="input-group-text fa fa-search"></div>
+            <div class="input-group-text p-3 fa fa-search border-right-0"></div>
           </div>
           <input
             placeholder="Search for a country..."
             [(ngModel)]="searchTerm"
             (keyup)="searchCountry()"
-            class="form-control"
+            class="form-control border-left-0"
           />
         </div>
       </div>
       <div class="col-xl-2 col-lg-3 col-md-12 col-sm-12 col-12 ml-auto">
-        <div class="dropdown position-relative" (click)="toggleDropdown()">
+        <div
+          class="dropdown button-border position-relative cursor-pointer"
+          (click)="toggleDropdown()"
+        >
           <span>Filter by region</span>
           <span
             class="fa right"
             [ngClass]="isOpen ? 'fa-chevron-up' : 'fa-chevron-down'"
           ></span>
           <ul
-            class="dropdown-list position-absolute w-100 start-0"
+            class="dropdown-list button-border position-absolute w-100 start-0"
             *ngIf="isOpen"
           >
             <li
@@ -31,6 +34,7 @@
               [ngClass]="
                 selectedRegion.value === region.value ? 'selected' : ''
               "
+              class="py-2 px-0"
             >
               {{ region.name }}
             </li>

@@ -5,11 +5,11 @@ import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { HeaderComponent } from "./header/header.component";
-import { ThemeTogglerComponent } from "./theme-toggler/theme-toggler.component";
-import { CountryComponent } from "./country/country.component";
-import { HomeComponent } from "./home/home.component";
-import { CountryInformationComponent } from './country-information/country-information.component';
+import { HeaderComponent } from "./components/header/header.component";
+import { ThemeTogglerComponent } from "./components/theme-toggler/theme-toggler.component";
+import { CountryComponent } from "./components/country/country.component";
+import { HomeComponent } from "./components/home/home.component";
+import { CountryInformationComponent } from "./components/country-information/country-information.component";
 
 @NgModule({
   declarations: [

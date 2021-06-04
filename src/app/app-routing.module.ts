@@ -1,8 +1,8 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { CountryInformationComponent } from "./country-information/country-information.component";
-import { HeaderComponent } from "./header/header.component";
-import { HomeComponent } from "./home/home.component";
+import { CountryInformationComponent } from "./components/country-information/country-information.component";
+import { HeaderComponent } from "./components/header/header.component";
+import { HomeComponent } from "./components/home/home.component";
 
 const routes: Routes = [
   {
@@ -11,8 +11,8 @@ const routes: Routes = [
   },
   {
     path: "country/:id",
-    component: CountryInformationComponent
-  }
+    component: CountryInformationComponent,
+  },
 ];
 
 @NgModule({

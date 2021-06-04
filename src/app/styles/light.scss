@@ -1,0 +1,15 @@
+.light {
+  .dropdown-list {
+    background: $white;
+  }
+  .input-group-text {
+    background: $white;
+  }
+  button {
+    background: inherit;
+  }
+
+  .bordering-country {
+    border: 1px solid $border-color;
+  }
+}

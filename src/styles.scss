@@ -3,6 +3,11 @@ $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import "./app/styles/variables.scss";
+@import "./app/styles/helpers.scss";
+@import "./app/styles/dark.scss";
+@import "./app/styles/light.scss";
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -15,7 +20,7 @@ img {
 button {
   border: none;
   padding: 1em;
-  border: 1px solid #ced4da;
+  border: 1px solid $border-color;
   border-radius: 0.5rem;
 }
 
@@ -34,101 +39,22 @@ h1,
   font-weight: 700;
 }
 
+.form-control,
 .input-group-text {
-  border-radius: 12px;
-}
-
-.form-control {
-  border-radius: 12px;
+  border-radius: $border-radius;
 }
 
 .form-control:focus,
 button:focus {
   outline: none;
   box-shadow: none;
-  border-color: #ced4da;
+  border-color: $border-color;
 }
 
 .form-control {
   background: inherit;
 }
 
-.right {
-  float: right;
-  margin-top: 0.175rem;
-}
-
-.w-40 {
-  width: 40% !important;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
 li.selected {
   font-weight: 700;
-}
-
-.dark {
-  p,
-  li,
-  span,
-  button,
-  input,
-  input:focus,
-  .fa,
-  h6,
-  .h6,
-  h5,
-  .h5,
-  h4,
-  .h4,
-  h3,
-  .h3,
-  h2,
-  .h2,
-  h1,
-  .h1 {
-    color: #efefef;
-  }
-
-  header {
-    background-color: #2d333b;
-  }
-
-  .home,
-  .country-information {
-    background: #22272e;
-  }
-
-  .country-card,
-  button,
-  .bordering-country {
-    background: #2d333b;
-  }
-
-  input,
-  input:focus,
-  .input-group-text,
-  .dropdown,
-  .dropdown-list {
-    background-color: #2d333b;
-  }
-}
-
-.light {
-  .dropdown-list {
-    background: #ffffff;
-  }
-  .input-group-text {
-    background: #ffffff;
-  }
-  button {
-    background: inherit;
-  }
-
-  .bordering-country {
-    border: 1px solid #ced4da;
-  }
 }

@@ -1,3 +1,4 @@
+@import "../../styles/variables.scss";
 .home {
   min-height: 100vh;
   input {
@@ -7,22 +8,13 @@
     border-right: none;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    padding: 1em;
   }
   .dropdown {
-    border: 1px solid #ced4da;
-    border-radius: 12px;
     height: 3rem;
     padding: 0.7em;
-    cursor: pointer;
     &-list {
       list-style-type: none;
-      border: 1px solid #ced4da;
-      border-radius: 12px;
       top: 3.2em;
-      li {
-        padding: 0.5em 0;
-      }
     }
   }
 }

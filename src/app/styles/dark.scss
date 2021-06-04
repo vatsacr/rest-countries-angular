@@ -1,0 +1,46 @@
+.dark {
+  p,
+  li,
+  span,
+  button,
+  input,
+  input:focus,
+  .fa,
+  h6,
+  .h6,
+  h5,
+  .h5,
+  h4,
+  .h4,
+  h3,
+  .h3,
+  h2,
+  .h2,
+  h1,
+  .h1 {
+    color: #efefef;
+  }
+
+  header {
+    background-color: $dark-interactive-bgColor;
+  }
+
+  .home,
+  .country-information {
+    background: $dark-bgColor;
+  }
+
+  .country-card,
+  button,
+  .bordering-country {
+    background: $dark-interactive-bgColor;
+  }
+
+  input,
+  input:focus,
+  .input-group-text,
+  .dropdown,
+  .dropdown-list {
+    background-color: $dark-interactive-bgColor;
+  }
+}

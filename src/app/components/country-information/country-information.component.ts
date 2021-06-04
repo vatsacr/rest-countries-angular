@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { CountryService } from "../country.service";
+import { CountryService } from "../../services/country.service";
 
 @Component({
   selector: "app-country-information",

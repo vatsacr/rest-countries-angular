@@ -5,12 +5,12 @@
     </button>
     <div class="row mt-5" *ngIf="country">
       <div class="col-lg-6 col-sm-12 col-xl-6 col-md-12 col-12">
-        <img [src]="country.flag" alt="country.name" />
+        <img class="rounded" [src]="country.flag" alt="country.name" />
       </div>
       <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 px-5 my-auto">
         <h2 class="mb-5">{{ country.name }}</h2>
         <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pb-5">
             <p class="mb-2">
               <strong>Native Name: </strong>{{ country.nativeName }}
             </p>
@@ -24,7 +24,7 @@
             </p>
             <p class="mb-2"><strong>Capital: </strong> {{ country.capital }}</p>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pb-5">
             <p class="mb-2">
               <strong>Top Level Domain: </strong>
               {{ country.topLevelDomain[0] }}
@@ -40,7 +40,7 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <span><strong>Border Countries:</strong></span>
           <div
             *ngFor="let border of country.borders"
