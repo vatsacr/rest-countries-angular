@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Production server
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/218fedaf-1ca6-47a7-a8b8-4826bb18776c/deploy-status)]
-Open `https://ng-rest-countries.netlify.app`
+[![Netlify Status](https://api.netlify.com/api/v1/badges/218fedaf-1ca6-47a7-a8b8-4826bb18776c/deploy-status)](https://app.netlify.com/sites/ng-rest-countries/deploys)
+Open [ngRestCountries](https://ng-rest-countries.netlify.app)
 
 ## Development server
 
