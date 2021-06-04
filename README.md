@@ -1,6 +1,10 @@
-# RestCountriesAngular
+# ngRestCountries
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+
+## Production server
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/218fedaf-1ca6-47a7-a8b8-4826bb18776c/deploy-status)](https://app.netlify.com/sites/ng-rest-countries/deploys)
 
 ## Development server
 
